@@ -1,0 +1,381 @@
+body{
+   margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+
+@font-face {
+    font-family: 'sofia-black';
+    src: url('../assets/fonts/Sofia\ Pro\ Black\ Az.otf') format('woff2');
+    font-weight: 400;  /* normal weight */
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sofia-black-italic';
+    src: url('../assets/fonts/Sofia\ Pro\ Black\ Italic\ Az.otf') format('woff2');
+    font-weight: 400;  /* normal weight */
+    font-style: italic;
+}
+@font-face {
+    font-family: 'sofia-bold';
+    src: url('../assets/fonts/Sofia\ Pro\ Bold\ Az.otf') format('woff2');
+    font-weight: bold;  /* normal weight */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sofia-bold-italic';
+    src: url('../assets/fonts/Sofia\ Pro\ Bold\ Italic\ Az.otf') format('woff2');
+    font-weight: bold;  /* normal weight */
+    font-style: italic;
+}
+@font-face {
+    font-family: 'sofia-light';
+    src: url('../assets/fonts/Sofia\ Pro\ Light\ Az.otf') format('woff2');
+    font-weight: 400;  /* normal weight */
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sofia-light-italic';
+    src: url('../assets/fonts/Sofia\ Pro\ Light\ Italic\ Az.otf') format('woff2');
+    font-weight: 400;  /* normal weight */
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'sofia-regular';
+    src: url('../assets/fonts/Sofia\ Pro\ Regular\ Az.otf') format('woff2');
+    font-weight: 400;  /* normal weight */
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sofia-regular-italic';
+    src: url('../assets/fonts/Sofia\ Pro\ Regular\ Italic\ Az.otf') format('woff2');
+    font-weight: 400;  /* normal weight */
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'sofia-ultralight-italic';
+    src: url('../assets/fonts/Sofia\ Pro\ Ultralight\ Italic\ Az.otf') format('woff2');
+    font-weight: 400;  /* normal weight */
+    font-style: italic;
+}
+@font-face {
+    font-family: 'sofia-ultralight';
+    src: url('../assets/fonts/Sofia\ Pro\ Ultralight\ Az.otf') format('woff2');
+    font-weight: 400;  /* normal weight */
+    font-style: normal;
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 75px 20px 75px;
+}
+
+.logo{
+    width: 100px;
+}
+
+.header nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-family: 'sofia-regular';
+}
+header {
+    background: linear-gradient(to bottom right, rgb(254, 237, 180), rgb(254, 237, 180)); 
+  }
+  .nav-list{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    font-family: 'sofia-regular';
+    font-size: 16px;
+  }
+  .header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 75px 150px 75px;
+   
+  }
+  .header-content-text{
+    font-family: 'sofia-regular';
+    font-weight: bold;
+    font-size: 3rem;
+    color: rgb(148, 67, 24);
+    line-height: 0.5;
+  }
+  .header-content-text span{
+    color: rgb(255, 110, 38);
+    
+  }
+  .btn{
+    padding: 10px 20px;
+    background-color: rgb(255, 110, 38);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: 'sofia-light';
+    font-size: 16px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  .btn:hover{
+    background-color: rgb(255, 110, 38);
+    color: #fff;
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+ 
+
+      /* main content */
+.main{
+    background-color: #fff;
+}
+.main-content{
+        text-align: center;
+        padding-top: 150px;
+    }
+    .main-content-text-heading{
+        font-family: 'sofia-regular';
+        font-weight: bold;
+        font-size: 2rem;
+        line-height: 0.5;
+    }
+    .main-content-text{
+        font-family: 'sofia-regular';
+        font-size: 1rem;
+        line-height: 0.5;
+        letter-spacing: 1px;
+        text-shadow:0 2px 5px rgba(0, 0, 0, 0.3);
+        
+    }
+    .main-content-box-container{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        padding: 60px 75px 0px 75px;
+        gap: 70px;
+    }
+    .main-content-box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        width:250px;
+        height: 250px;
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    .main-content-box-text{
+        font-family: 'sofia-regular';
+        font-size: 0.8rem;
+        
+
+    }
+    .image-container{
+        position: relative;   /* absolute children ke liye reference */
+        width: 500px;         /* apne hisaab se size */
+        height: 500px;
+        text-align: center;
+    }
+    .image-container img {
+        position: absolute;   /* free movement possible */
+        top: 50%;             /* vertically center */
+        left: 50%;            /* horizontally center */
+        transform: translate(-50%, -50%); /* perfect center */
+      }
+ 
+     
+      .img2 {
+           bottom: 20px;      /* smaller size */
+      }
+      
+      
+     /* laptop section */
+     .laptop-section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 150px 100px 0px 100px;
+     }
+     .laptop{
+        width: 700px;
+     }
+     .laptop-text{
+        max-width: 500px;
+        font-family: 'sofia-regular';
+        font-size: 1rem;
+        line-height: 1;
+        color: rgb(128, 128, 128);     /* words ko unnecessarily break na kare */
+        white-space: pre-line;
+        
+    }
+    .laptop-section-text-heading{
+        font-family: 'sofia-regular';
+        font-size: 2rem;
+        line-height: 0.1;
+    }
+    .laptop-mini-text{
+        font-family: 'sofia-regular';
+        font-size: 1rem;
+        color: rgb(27, 43, 62);
+
+    }
+     .laptop-section-text{
+        font-family: 'sofia-regular';
+        font-size: 1rem;
+        margin-left: 175px;
+     }
+
+     /* why us section */
+     
+     .why-us-text{
+        padding-bottom: 50px;
+        
+       
+     }
+
+     .why-us-text-heading{
+        font-family: 'sofia-light';
+        font-size: 1.5rem;
+        line-height: 0.5;
+        font-weight: bold;
+        position: relative;
+        display: inline-block;
+        
+       
+     }
+     .why-us-text-heading::after{
+        content: "";
+        position: absolute;
+        bottom: -13px;
+        left: 0;
+        width: 50%;
+        height: 4px;
+        background-color: rgb(255, 110, 38);
+     }
+     .why-us-content{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 20px 75px 150px 75px;
+
+     
+     }
+    
+     .why-us-content-box{
+        font-family: 'sofia-regular';
+        width: 250px;
+        height: 225px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        padding-top: 20px;
+     }
+     .why-us-content-box-image{
+        text-align: center;
+     }
+     .why-us-content-box-text{
+        padding: 0px 20px;
+        font-size: 1.2rem;
+     }
+     .p{
+        font-size: 0.9rem;
+     }
+
+
+     /* services section */
+     .service{
+        padding-bottom: 150px;
+     }
+     .service-main-content{
+        background-image: url('../assets/images/Rectangle\ 8.png');
+        background-size: cover;
+        padding: 50px 75px 100px 75px;
+     }
+     .service-text-container{
+        font-family: 'sofia-light';
+        align-items: center;
+        text-align: center;
+        width: 50%;
+        margin: auto;
+     }
+     .service-text-heading{
+        font-size: 2.1rem;
+        line-height: 1;
+     }
+     .service-text{
+        font-size: 0.9rem;
+        line-height: 1.5;
+        color: rgb(61, 81, 102);
+     }
+     .span{
+        color: rgb(255, 110, 38);
+     }
+     .service-image{
+        text-align: center;
+        margin-top: 50px;
+     }
+     .service-btn{
+        text-align: center;
+        margin-top: 50px;
+     }
+
+
+
+      /* footer section */
+
+    .footer{
+        background-image: url('../assets/images/Rectangle\ 8.png');
+        background-size: cover;
+        height: 400px;
+        padding-top: 50px;
+        
+      }
+      .footer-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 20px 75px 20px 75px;
+       
+      }
+      .footer-list{
+        list-style: none;
+      }
+      .footer-list li a{
+        text-decoration: none;
+        color: #000;
+        font-family: 'sofia-regular';
+        line-height: 2;
+        
+      }
+
+      .footer-links{
+        align-self: start;
+        margin-left: 100px;
+      }
+      .footer-heading-links{
+        margin-left: 40px;
+      }
+      .footer-heading{
+        font-family: 'sofia-regular';
+        font-size: 1rem;
+        line-height: 2;
+        margin-bottom: 20px;
+        
+      }
+      .footer-content-box{
+        font-family: 'sofia-regular';
+      }
+     .btn-footer{
+        margin-top: 20px;
+     }
+      
