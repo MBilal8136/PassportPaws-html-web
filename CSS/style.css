@@ -266,7 +266,7 @@ header {
      .why-us-content{
         display: flex;
         justify-content: space-evenly;
-        padding: 20px 75px 150px 75px;
+        padding: 20px 75px 0px 75px;
 
      
      }
@@ -328,8 +328,6 @@ header {
         text-align: center;
         margin-top: 50px;
      }
-
-
 
       /* footer section */
 
