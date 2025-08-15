@@ -1,0 +1,349 @@
+body{
+    margin: 0;
+     padding: 0;
+ }
+@font-face {
+    font-family: 'sofia-black';
+    src: url('../assets/fonts/Sofia\ Pro\ Black\ Az.otf') format('woff2');
+    font-weight: 400;  /* normal weight */
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sofia-black-italic';
+    src: url('../assets/fonts/Sofia\ Pro\ Black\ Italic\ Az.otf') format('woff2');
+    font-weight: 400;  /* normal weight */
+    font-style: italic;
+}
+@font-face {
+    font-family: 'sofia-bold';
+    src: url('../assets/fonts/Sofia\ Pro\ Bold\ Az.otf') format('woff2');
+    font-weight: bold;  /* normal weight */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sofia-bold-italic';
+    src: url('../assets/fonts/Sofia\ Pro\ Bold\ Italic\ Az.otf') format('woff2');
+    font-weight: bold;  /* normal weight */
+    font-style: italic;
+}
+@font-face {
+    font-family: 'sofia-light';
+    src: url('../assets/fonts/Sofia\ Pro\ Light\ Az.otf') format('woff2');
+    font-weight: 400;  /* normal weight */
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sofia-light-italic';
+    src: url('../assets/fonts/Sofia\ Pro\ Light\ Italic\ Az.otf') format('woff2');
+    font-weight: 400;  /* normal weight */
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'sofia-regular';
+    src: url('../assets/fonts/Sofia\ Pro\ Regular\ Az.otf') format('woff2');
+    font-weight: 400;  /* normal weight */
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sofia-regular-italic';
+    src: url('../assets/fonts/Sofia\ Pro\ Regular\ Italic\ Az.otf') format('woff2');
+    font-weight: 400;  /* normal weight */
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'sofia-ultralight-italic';
+    src: url('../assets/fonts/Sofia\ Pro\ Ultralight\ Italic\ Az.otf') format('woff2');
+    font-weight: 400;  /* normal weight */
+    font-style: italic;
+}
+@font-face {
+    font-family: 'sofia-ultralight';
+    src: url('../assets/fonts/Sofia\ Pro\ Ultralight\ Az.otf') format('woff2');
+    font-weight: 400;  /* normal weight */
+    font-style: normal;
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 75px 0px 75px;
+    background-color: rgb(252, 206, 140);
+}
+
+.logo{
+    width: 100px;
+    margin-top: 10px;
+}
+
+.header nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-family: 'sofia-regular';
+}
+.nav-list{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    font-family: 'sofia-regular';
+    font-size: 16px;
+  }
+
+  .btn{
+    padding: 10px 20px;
+    background-color: rgb(255, 110, 38);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: 'sofia-light';
+    font-size: 16px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  .btn:hover{
+    background-color: rgb(255, 110, 38);
+    color: #fff;
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+ 
+
+
+/* Checkout page styles */
+.checkout-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.checkout-content {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.checkout-left {
+    flex: 1;
+    min-width: 300px;
+}
+
+.checkout-right {
+    flex: 0 0 300px;
+}
+
+.checkout-box {
+    background-color: #f8f9ff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.checkout-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.checkout-header h3, .checkout-box h3 {
+    font-family: 'sofia-regular';
+    font-size: 1.1rem;
+    margin: 0;
+    color: #333;
+}
+
+.close-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #999;
+}
+
+.selected-package {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.package-image {
+    flex: 0 0 80px;
+}
+
+.package-image img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.package-info {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.plan-title {
+    font-family: 'sofia-regular';
+    font-size: 1.1rem;
+    color: rgb(255, 110, 38);
+    margin: 0 0 5px 0;
+}
+
+.plan-duration {
+    font-family: 'sofia-regular';
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0 0 5px 0;
+}
+
+.plan-price {
+    font-family: 'sofia-bold';
+    font-size: 6rem;
+    color: #4CAF50;
+    margin: 0px;
+} 
+
+.cents {
+    font-family: 'sofia-bold';
+    color: #4CAF50;
+    font-size: 1rem;
+    vertical-align: super;
+}
+
+.details-list {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0 0;
+}
+
+.details-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 12px;
+    font-family: 'sofia-regular';
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.check-mark {
+    color: #4CAF50;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.payment-details {
+    margin: 20px 0;
+}
+
+.payment-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-family: 'sofia-regular';
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.price {
+    font-family: 'sofia-bold';
+    color: #4CAF50;
+    font-size: 1.2rem;
+}
+
+.pay-now-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(255, 110, 38);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: 'sofia-regular';
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 15px 0;
+    transition: background-color 0.3s;
+}
+
+.pay-now-btn:hover {
+    background-color: #ff5722;
+}
+
+.payment-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.payment-info p {
+    font-family: 'sofia-regular';
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.payment-methods img {
+    height: 30px;
+    margin-right: 10px;
+    background-color: transparent;
+}
+
+@media (max-width: 768px) {
+    .checkout-content {
+        flex-direction: column;
+    }
+    
+    .checkout-right {
+        flex: 1;
+    }
+}
+      
+       /* footer section */
+
+       .footer{
+        background-image: url('../assets/images/Rectangle\ 8.png');
+        background-size: cover;
+        height: 400px;
+        padding-top: 50px;
+        
+      }
+      .footer-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 20px 75px 20px 75px;
+       
+      }
+      .footer-list{
+        list-style: none;
+      }
+      .footer-list li a{
+        text-decoration: none;
+        color: #000;
+        font-family: 'sofia-regular';
+        line-height: 2;
+        
+      }
+
+      .footer-links{
+        align-self: start;
+        margin-left: 100px;
+      }
+      .footer-heading-links{
+        margin-left: 40px;
+      }
+      .footer-heading{
+        font-family: 'sofia-regular';
+        font-size: 1rem;
+        line-height: 2;
+        margin-bottom: 20px;
+        
+      }
+      .footer-content-box{
+        font-family: 'sofia-regular';
+      }
+     .btn-footer{
+        margin-top: 20px;
+     }
