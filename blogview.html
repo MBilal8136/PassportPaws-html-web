@@ -12,6 +12,11 @@
             <div>
                 <img class="logo" src="assets/images/logo.png" alt="">
             </div>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <nav  class="nav">
                 <ul class="nav-list">
                     <li><a href="./index.html">Home</a></li>
@@ -147,5 +152,40 @@
                 </div>
             </div>
         </footer>
+        
+        <script>
+            // Mobile menu toggle functionality
+            document.addEventListener('DOMContentLoaded', function() {
+                const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+                const nav = document.querySelector('.nav');
+                
+                mobileMenuToggle.addEventListener('click', function() {
+                    mobileMenuToggle.classList.toggle('active');
+                    nav.classList.toggle('active');
+                });
+                
+                // Close menu when clicking outside
+                document.addEventListener('click', function(event) {
+                    const isClickInsideMenu = nav.contains(event.target);
+                    const isClickOnToggle = mobileMenuToggle.contains(event.target);
+                    
+                    if (!isClickInsideMenu && !isClickOnToggle && nav.classList.contains('active')) {
+                        mobileMenuToggle.classList.remove('active');
+                        nav.classList.remove('active');
+                    }
+                });
+                
+                // Close menu when clicking a nav link on mobile
+                const navLinks = document.querySelectorAll('.nav-list li a');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        if (window.innerWidth <= 768) {
+                            mobileMenuToggle.classList.remove('active');
+                            nav.classList.remove('active');
+                        }
+                    });
+                });
+            });
+        </script>
     </body>
 </html>
