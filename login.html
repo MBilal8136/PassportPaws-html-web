@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - PassportPaws</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div>
+                <img class="logo" src="assets/images/logo.png" alt="">
+            </div>
+            <nav  class="nav">
+                <ul class="nav-list">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./services.html">Our Services</a></li>    
+                    <li><a href="./blogs.html">Blogs</a></li>    
+                    <li><a href="./plan&price.html">Plan & Pricing</a></li>    
+                    <li><a href="./login.html">Login</a></li>    
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="login-body">
+        <div class="login-container">
+        <div class="login-card">
+            <div class="back-button">
+                <a href="./index.html"><i class="fas fa-arrow-left"></i></a>
+            </div>
+            <h2 class="login-title">Account</h2>
+            <div class="tab-container">
+                <div class="tab active" data-tab="login">Log in</div>
+                <div class="tab" data-tab="signup">Sign up</div>
+            </div>
+            
+            <div class="tab-content" id="login-content">
+                <form class="login-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Type here">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Type here">
+                        <div class="forgot-password">
+                            <a href="#">Forgot password?</a>
+                        </div>
+                    </div>
+                    <button type="submit" class="login-btn">Log in</button>
+                </form>
+                
+                <div class="social-login">
+                    <p>Or sign in with</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-google"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content hidden" id="signup-content">
+                <form class="login-form">
+                    <div class="form-group">
+                        <label for="signup-name">Name</label>
+                        <input type="text" id="signup-name" placeholder="Type here">
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-email">Email</label>
+                        <input type="email" id="signup-email" placeholder="Type here">
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-password">Password</label>
+                        <input type="password" id="signup-password" placeholder="Type here">
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-password">Confirm Password</label>
+                        <input type="password" id="signup-password" placeholder="Type here">
+                    </div>
+                    <button type="submit" class="login-btn">Sign up</button>
+                </form>
+                
+                <div class="social-login">
+                    <p>Or sign up with</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-google"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+         <!-- footer -->
+    <footer class="footer">
+        <div class="footer-content">  
+            <div class="footer-content-box">
+             <img class="logo" src="./assets/images/logo.png" alt="logo">
+             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, <br>libero earum eius exercitationem sapiente perferendis <br> quod obcaecati quibusdam deserunt nulla. </p>
+             <button class="btn btn-footer">Be a Member</button>
+            </div>
+            <div class="footer-links">
+             <h3 class="footer-heading footer-heading-links">Quick Links</h3>
+             <ul class="footer-list">
+                 <li><a href="#">Home</a></li>
+                 <li><a href="#">About Us</a></li>
+                 <li><a href="#">Our Services</a></li>
+                 <li><a href="#">Blogs</a></li>
+                 <li><a href="plan&price.html">Plan & Pricing</a></li>
+             </ul>
+            </div>
+            <div class="footer-follow-us">
+             <h3 class="footer-heading">Follow Us on</h3>
+             <img  src="./assets/images/Group 369.png" alt="">
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('.tab');
+            const tabContents = document.querySelectorAll('.tab-content');
+            
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    const tabId = this.getAttribute('data-tab');
+                    
+                    tabs.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    tabContents.forEach(content => {
+                        content.classList.add('hidden');
+                    });
+                    
+                    document.getElementById(tabId + '-content').classList.remove('hidden');
+                });
+            });
+        });
+    </script>
+    
+</body>
+</html>
